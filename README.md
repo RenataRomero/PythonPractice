@@ -36,7 +36,8 @@ The operator ! stands for the factorials, defined as: 0! = 1 and n! = n*(n-1)!
 Write a Python program that defines a function for caculating factorials. Then the program asks a user to input an integer 0 to 20 and print out the factorial of such number. The program should check that the input is an integer from interval [0,20], and if not the program should write `INVALID INPUT`.
 
 The function definitions should start as:
-`def factorial(n):`
+
+```def factorial(n):```
 
 ## Random Number Guess (Exercise 4)
 
