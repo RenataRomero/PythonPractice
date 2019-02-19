@@ -44,7 +44,7 @@ The function definitions should start as:
 ### Instructions:
 Write a program that generates a random number in the range of 1 through 100 and asks the user to guess what the number is. If the user's guess is higher than the random number, the program should display `Too high, try again.` If the user's guess is lower than the random number, the program should display `Too low, try again.` If the user guesses the number, the application should congratulate the user, report how many attempts the user made and ask user if he/she wants to play again. If the user answers `n` (no) the program exists and if the user answers `y` (yes) a new random number is generated so the game can start over.
 
-## Dice Frequency
+## Dice Frequency (Exercise 5)
 ### Instruction:
 In a program, write a function named `roll` that accepts an integer argument `number_of_throws` . The function should generate and return a sorted list of `number_of_throws` random numbers between 1 and 6. The program should check that the user enters a positive integer that is sent to the function and then prnt the returned list as a table of frequencies with columns `numbers` and `frequencies`.
 
