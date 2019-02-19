@@ -30,13 +30,27 @@ def main():
     numbers = []
     summation = int(number)
     iterations = 0
-    print("Enter numbers 1 by 1 and use * to stop:")
+    print("Enter from 3 to 9 numbers 1 by 1 and use * to stop:")
     while number != "*":
         number = input()
         if number != "*":
             summation += int(number)
             numbers.append(int(number))
             iterations += 1
+        else:
+            if iterations < 3:
+                print("Not enough numbers, try again with at least 3 numbers.")
+                number = 0
+                numbers = []
+                summation = 0
+                iterations = 0
+            elif iterations > 9:
+                print("You have passed the limit number, try again with less than 9 numbers or 9 numbers.")
+                number = 0
+                numbers = []
+                summation = 0
+                iterations = 0
+                
 
     mean_number = mean(summation, iterations)
     print("Mean: " + str(mean_number))
