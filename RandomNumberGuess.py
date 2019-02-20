@@ -9,7 +9,7 @@ def generate_random_number():
 '''
     Runs the main program and this is where the guess of the user is evaluated.
 '''
-def main():
+if __name__ == "__main__":
     try_again = True
     attempts = 0
 
@@ -42,6 +42,3 @@ def main():
         #If the player doesn't want to, leave the game.
         if answer == "n":
             try_again = False
-
-main()
-

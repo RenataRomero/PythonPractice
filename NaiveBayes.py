@@ -53,7 +53,7 @@ def naive_bayes(grade, hours):
 '''
     Main function that gets and validates the user inputs and also calls naive_bayes function.
 '''
-def main():
+if __name__ == "__main__":
     #Gets the user inputs.
     grade = input("Enter the grade (A/B/C):\n").upper()
 
@@ -73,5 +73,3 @@ def main():
 
     #Calls the naive_bayes function giving it the user inputs.
     naive_bayes(grade, hours)
-
-main()

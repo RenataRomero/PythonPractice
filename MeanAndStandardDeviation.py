@@ -2,7 +2,7 @@ import math
 '''
     Returns the summation of the numbers in a list.
 '''
-def summation(numbers):
+def summation_list(numbers):
     summation = 0.0
     for i in numbers:
         summation += i
@@ -23,7 +23,8 @@ def standard_deviation(mean, numbers, iterations):
         square_median_distance.append(square_result)
 
     #Once you get all the distances, get the summation and divide it with the number of numbers.
-    s_m_d_summation = summation(square_median_distance)/iterations
+    print(summation_list(square_median_distance))
+    s_m_d_summation = summation_list(square_median_distance)/iterations
     #Now get the root square of the las result.
     standard_deviation = math.sqrt(s_m_d_summation)
 
@@ -42,7 +43,7 @@ def mean(summation, iterations):
     Validates that the user can only enter 3 to 9 inputs.
     Calls the mean and standard_deviations to print the results.
 '''
-def main():
+if __name__ == "__main__":
     number = 0
     numbers = []
     summation = int(number)
@@ -78,5 +79,3 @@ def main():
     mean_number = mean(summation, iterations)
     print("Mean: " + str(mean_number))
     print("Standard Deviation: " + str(standard_deviation(mean_number, numbers, iterations)))
-
-main()

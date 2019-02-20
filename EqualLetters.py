@@ -47,7 +47,7 @@ def only_one_different(charDictionary): #bbaab
     else:
         return True
 
-def main():
+if __name__ == "__main__":
     tryAgain = True
     while tryAgain:
         word = get_user_input()
@@ -70,5 +70,3 @@ def main():
             tryAgain = True
         else:
             tryAgain = False
-
-main()            

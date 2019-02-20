@@ -16,7 +16,7 @@ def factorial(number):
     Main function where the input is validated so it is not bigger than 20 or less than 0.
     Prints the number returned by the factorial function.
 '''
-def main():
+if __name__ == "__main__":
 
     user_input = int(input("Enter a number from 0 to 20:\n"))
     
@@ -25,5 +25,3 @@ def main():
         print("INVALID INPUT")
     else:
         print("Factorial: " + str(factorial(int(user_input))))
-
-main()

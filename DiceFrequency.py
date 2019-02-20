@@ -39,7 +39,7 @@ def build_frequency_table(dictionary):
     Main function where the input is validated so it always is positive 
     and prints the frequency table with the build_frequency_table format.
 '''
-def main():
+if __name__ == "__main__":
     #Gets the number of throws.
     number_of_throws = int(input("Enter the number of throws:\n"))
 
@@ -50,5 +50,3 @@ def main():
     
     #Prints the frequency table.
     build_frequency_table(roll(number_of_throws))
-
-main()
