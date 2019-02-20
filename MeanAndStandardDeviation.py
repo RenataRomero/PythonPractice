@@ -1,6 +1,6 @@
 import math
 '''
-    Returns the user input word.
+    Returns the summation of the numbers in a list.
 '''
 def summation(numbers):
     summation = 0.0
